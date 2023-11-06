@@ -1,5 +1,9 @@
 body {
   font-family: "Open Sans";
+  margin: 0;
+}
+
+.title {
   padding: 1%;
 }
 
@@ -61,4 +65,57 @@ h1 span {
 .button2 p {
   color: rgb(255, 255, 255);
   font-size: 1.5em;
+}
+
+.minuteur {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image:
+    url('/countdown.svg');
+  height: 900px;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.minuteur h1 {
+  color: rgb(255, 255, 255);
+}
+
+.minuteur a {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
+
+.timer {
+  display: flex;
+  gap: 4%;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 4%;
+}
+
+.time {
+  text-align: center;
+  width: 15%;
+  background-color: white;
+}
+
+.time p {
+  color: rgb(233, 83, 113);
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.svg {
+
+  display: block;
+  position: relative;
+  top: -2px;
+  height: 234px;
+  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1920 234" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(47, 73, 94, 1)" d="M 0 126 C 291.3 126 679.7 110 971 110 L 971 110 L 971 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(47, 73, 94, 1)" d="M 970 110 C 1255 110 1635 194 1920 194 L 1920 194 L 1920 0 L 970 0 Z" stroke-width="0"></path> </svg>');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
