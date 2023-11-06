@@ -70,7 +70,7 @@ h1 span {
   font-size: 1.5em;
 }
 
-.minuteur {
+.div-timer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,12 +83,12 @@ h1 span {
 }
 
 
-.minuteur h1 {
+.div-timer h1 {
   color: rgb(255, 255, 255);
   font-size: 3em;
 }
 
-.minuteur a {
+.div-timer a {
   color: rgb(255, 255, 255);
   text-decoration: underline;
   font-size: 3em;
@@ -137,6 +137,7 @@ h1 span {
 
 .key-h1 {
   font-size: 4em;
+  margin-top: 3%;
 }
 
 .key-roles .description {
@@ -155,8 +156,7 @@ h1 span {
 
 .roles div {
   padding-left: 30px;
-  width: calc(30% - 10px);
-  /* 10px sont ajoutés pour gérer les espaces entre les éléments */
+  width: calc(33% - 10px);
   margin-bottom: 10px;
   box-sizing: border-box;
   border-style: solid;
@@ -173,4 +173,26 @@ h1 span {
   font-size: 1.6em;
   width: 60%;
   color: rgb(159, 159, 159);
+}
+
+.reasons {
+  background-image:
+    url('/Frame.svg');
+  height: 33vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5%;
+}
+
+.reasons h1 {
+  font-size: 2em;
+  margin-bottom: 0px;
+}
+
+.reasons a {
+  font-size: 2em;
+  font-weight: 700;
+  color: rgb(233, 83, 113);
+  text-decoration: underline;
 }
