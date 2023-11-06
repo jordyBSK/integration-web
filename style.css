@@ -196,3 +196,50 @@ h1 span {
   color: rgb(233, 83, 113);
   text-decoration: underline;
 }
+
+.all-talents {
+  justify-content: center;
+  display: flex;
+  gap: 10%;
+}
+
+form {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 10%;
+  justify-content: center;
+}
+
+form div {
+  width: calc(40% - 10px);
+}
+
+label {
+  font-weight: 900;
+}
+
+input {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  margin: 0 0 15px;
+  padding: 15px;
+  font-size: 14px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(21, 21, 21);
+  border-radius: 5px;
+}
+
+form button {
+  justify-content: center;
+  width: 90%;
+  background-color: rgb(233, 83, 113);
+  text-decoration: white;
+}
+
+form button p {
+  color: white;
+  font-weight: 800;
+  font-size: 1.5em;
+}
