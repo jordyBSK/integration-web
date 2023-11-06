@@ -4,7 +4,9 @@ body {
 }
 
 .title {
-  padding: 1%;
+  padding-left: 5%;
+  font-weight: bold;
+  font-size: 2em;
 }
 
 .container {
@@ -30,6 +32,7 @@ h1 span {
 
 .description {
   text-align: center;
+  font-size: 1.3em;
   width: 40%;
   color: rgb(157, 157, 157);
 }
@@ -73,7 +76,7 @@ h1 span {
   align-items: center;
   background-image:
     url('/countdown.svg');
-  height: 900px;
+  height: 818px;
   justify-content: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -82,16 +85,18 @@ h1 span {
 
 .minuteur h1 {
   color: rgb(255, 255, 255);
+  font-size: 3em;
 }
 
 .minuteur a {
   color: rgb(255, 255, 255);
   text-decoration: underline;
+  font-size: 3em;
 }
 
 .timer {
   display: flex;
-  gap: 4%;
+  gap: 3%;
   width: 100%;
   justify-content: center;
   margin-bottom: 4%;
@@ -99,23 +104,73 @@ h1 span {
 
 .time {
   text-align: center;
-  width: 15%;
+  width: 12%;
   background-color: white;
 }
 
 .time p {
   color: rgb(233, 83, 113);
-  font-weight: bold;
+  font-weight: 1000;
   font-size: 2em;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .svg {
 
   display: block;
   position: relative;
-  top: -2px;
   height: 234px;
   background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1920 234" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(47, 73, 94, 1)" d="M 0 126 C 291.3 126 679.7 110 971 110 L 971 110 L 971 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(47, 73, 94, 1)" d="M 970 110 C 1255 110 1635 194 1920 194 L 1920 194 L 1920 0 L 970 0 Z" stroke-width="0"></path> </svg>');
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.key-roles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.key-h1 {
+  font-size: 4em;
+}
+
+.key-roles .description {
+  font-size: 1.7em;
+  width: 100%;
+  line-height: 1;
+  display: inline-block;
+}
+
+.roles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 75%;
+}
+
+.roles div {
+  padding-left: 30px;
+  width: calc(30% - 10px);
+  /* 10px sont ajoutés pour gérer les espaces entre les éléments */
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(204, 204, 204);
+  border-radius: 20px;
+}
+
+.icon {
+  font-size: 5em;
+}
+
+.roles p {
+  font-size: 1.6em;
+  width: 60%;
+  color: rgb(159, 159, 159);
 }
