@@ -20,7 +20,7 @@ body {
 .container h1 {
   font-size: 7vh;
   margin-bottom: 0;
-  width: 50%;
+  width: 70%;
 }
 
 h1 span {
@@ -30,7 +30,7 @@ h1 span {
 .description {
   text-align: center;
   font-size: 1.3em;
-  width: 40%;
+  width: 70%;
   color: rgb(157, 157, 157);
 }
 
@@ -39,42 +39,51 @@ h1 span {
   justify-content: center;
 }
 
-.button1,
-.button2 {
-  display: flex;
-  border-radius: 10px;
-  padding-right: 10%;
-  text-align: start;
-  background-color: transparent;
-  border: none;
-  margin-bottom: 7%;
+.button1 {
+  width: 300px;
+  font-size: 1em;
+  margin-right: 1%;
+  background-color: #efefef;
+  border-radius: 25px;
+  padding: 20px;
 }
 
-.button1 h1,
-.button2 h1 {
-  margin-left: 10px;
-}
-
-
 .button2 {
-  background-color: rgb(233, 83, 113);
+  width: 300px;
+  font-size: 1em;
+  margin-left: 1%;
+  background-color: #e95270;
+  border-radius: 25px;
+  padding: 20px;
   color: white;
 }
+
+.button1 h2,
+.button2 h2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
 
 .container-timer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 67vh;
   justify-content: center;
   background: no-repeat center/cover url('/countdown.svg');
+  background-size: 100%;
 }
 
-.container-timer h1,
+.container-timer h1 {
+  color: white;
+  padding-top: 100px;
+}
+
 .container-timer a {
   color: white;
-  font-size: 3em;
-  margin-bottom: 5%;
+  font-size: 2em;
+  margin-bottom: 15%;
 }
 
 .timer {
@@ -82,7 +91,7 @@ h1 span {
   gap: 3%;
   width: 100%;
   justify-content: center;
-  margin-bottom: 4%;
+  margin-bottom: 2%;
 }
 
 .time {
@@ -104,58 +113,58 @@ h1 span {
   align-items: center;
   justify-content: center;
   background: no-repeat center/cover url('/background-image.jpg');
+  background-size: 100%;
 }
 
 .key-h1 {
-  font-size: 4em;
-  margin-top: 3%;
+  font-size: 3em;
+  margin-bottom: 0;
+
 }
 
 .key-roles .description {
   font-size: 1.7em;
   width: 100%;
-  line-height: 1;
-  display: inline-block;
+  margin-top: 0;
 }
 
 .roles {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 75%;
+  width: 90%;
 }
 
 .roles div {
   padding-left: 30px;
   width: calc(33% - 10px);
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   box-sizing: border-box;
   border: 1px solid rgb(204, 204, 204);
   border-radius: 20px;
 }
 
 .icon {
-  font-size: 5em;
+  font-size: 4em;
+  margin-top: 5px;
 }
 
 .roles p {
   font-size: 1.6em;
-  width: 60%;
   color: rgb(159, 159, 159);
 }
 
 .reasons {
-  background: no-repeat center/cover url('/Frame.svg');
-  height: 52vh;
+  background: no-repeat center/cover url(/Frame.svg);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 5%;
+  padding-bottom: 9%;
 }
 
-.reasons h1 {
-  font-size: 4em;
-  margin-bottom: 0px;
+.reasons .text p {
+  color: black;
+  margin-top: 10%;
 }
 
 .reasons a {
@@ -172,6 +181,10 @@ h1 span {
   flex-direction: column;
 }
 
+.text h1 {
+  margin-bottom: 0px;
+}
+
 .text p {
   color: rgb(159, 159, 159);
 }
@@ -183,11 +196,14 @@ h1 span {
 }
 
 .talent-icon {
-  font-size: 5em;
+  font-size: 3em;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .talent-icon:focus {
   border: solid;
+  border-radius: 10%;
 }
 
 form {
@@ -200,6 +216,7 @@ form {
 
 form div {
   width: calc(31% - 10px);
+  padding-bottom: 2%;
 }
 
 label {
@@ -229,4 +246,29 @@ form button {
 
 form button p {
   width: 100%;
+  padding-bottom: 20;
 }
+
+footer {
+  padding-top: 9%;
+  background-image: url(/Frame12.svg);
+  background-repeat: no-repeat;
+  font-size: 1em;
+  background-size: 100%;
+  margin-top: 2%;
+  height: 180px;
+}
+
+footer .text h1,
+footer .text h2 {
+  color: white;
+}
+
+footer h2 {
+  font-weight: 400;
+  margin: 0;
+}
+
+
+/* responsive */
+@media (max-width: 1440px) {}
