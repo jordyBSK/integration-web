@@ -17,13 +17,10 @@ body {
   align-items: center;
 }
 
-.start {
-  width: 60%;
-  margin-bottom: 1%;
-}
-
 .container h1 {
   font-size: 7vh;
+  margin-bottom: 0;
+  width: 50%;
 }
 
 h1 span {
@@ -42,56 +39,42 @@ h1 span {
   justify-content: center;
 }
 
-.button1 {
-  margin-right: 2%;
+.button1,
+.button2 {
+  display: flex;
   border-radius: 10px;
-  padding-right: 200px;
-  padding-left: 20px;
+  padding-right: 10%;
   text-align: start;
-  border-width: 0px;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 7%;
 }
 
-.button1 p {
-  color: rgb(0, 0, 0);
-  font-size: 1.5em;
+.button1 h1,
+.button2 h1 {
+  margin-left: 10px;
 }
+
 
 .button2 {
-  border-radius: 10px;
-  padding-right: 200px;
-  padding-left: 20px;
-  text-align: start;
-  border-width: 0px;
   background-color: rgb(233, 83, 113);
+  color: white;
 }
 
-.button2 p {
-  color: rgb(255, 255, 255);
-  font-size: 1.5em;
-}
-
-.div-timer {
+.container-timer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image:
-    url('/countdown.svg');
-  height: 818px;
+  height: 67vh;
   justify-content: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: no-repeat center/cover url('/countdown.svg');
 }
 
-
-.div-timer h1 {
-  color: rgb(255, 255, 255);
+.container-timer h1,
+.container-timer a {
+  color: white;
   font-size: 3em;
-}
-
-.div-timer a {
-  color: rgb(255, 255, 255);
-  text-decoration: underline;
-  font-size: 3em;
+  margin-bottom: 5%;
 }
 
 .timer {
@@ -112,18 +95,7 @@ h1 span {
   color: rgb(233, 83, 113);
   font-weight: 1000;
   font-size: 2em;
-  padding-top: 5%;
-  padding-bottom: 5%;
-}
-
-.svg {
-
-  display: block;
-  position: relative;
-  height: 234px;
-  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1920 234" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(47, 73, 94, 1)" d="M 0 126 C 291.3 126 679.7 110 971 110 L 971 110 L 971 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(47, 73, 94, 1)" d="M 970 110 C 1255 110 1635 194 1920 194 L 1920 194 L 1920 0 L 970 0 Z" stroke-width="0"></path> </svg>');
-  background-size: cover;
-  background-repeat: no-repeat;
+  padding: 5% 0;
 }
 
 .key-roles {
@@ -131,8 +103,7 @@ h1 span {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: no-repeat center/cover url('/background-image.jpg');
 }
 
 .key-h1 {
@@ -159,9 +130,7 @@ h1 span {
   width: calc(33% - 10px);
   margin-bottom: 10px;
   box-sizing: border-box;
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgb(204, 204, 204);
+  border: 1px solid rgb(204, 204, 204);
   border-radius: 20px;
 }
 
@@ -176,9 +145,8 @@ h1 span {
 }
 
 .reasons {
-  background-image:
-    url('/Frame.svg');
-  height: 33vh;
+  background: no-repeat center/cover url('/Frame.svg');
+  height: 52vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -186,7 +154,7 @@ h1 span {
 }
 
 .reasons h1 {
-  font-size: 2em;
+  font-size: 4em;
   margin-bottom: 0px;
 }
 
@@ -195,24 +163,43 @@ h1 span {
   font-weight: 700;
   color: rgb(233, 83, 113);
   text-decoration: underline;
+  margin-bottom: 3%;
+}
+
+.text {
+  display: flex;
+  margin-left: 17%;
+  flex-direction: column;
+}
+
+.text p {
+  color: rgb(159, 159, 159);
 }
 
 .all-talents {
-  justify-content: center;
   display: flex;
-  gap: 10%;
+  justify-content: center;
+  gap: 5%;
+}
+
+.talent-icon {
+  font-size: 5em;
+}
+
+.talent-icon:focus {
+  border: solid;
 }
 
 form {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  gap: 10%;
+  gap: 5%;
   justify-content: center;
 }
 
 form div {
-  width: calc(40% - 10px);
+  width: calc(31% - 10px);
 }
 
 label {
@@ -225,21 +212,21 @@ input {
   margin: 0 0 15px;
   padding: 15px;
   font-size: 14px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgb(21, 21, 21);
+  border: 1px solid rgb(21, 21, 21);
   border-radius: 5px;
 }
 
 form button {
+  display: flex;
   justify-content: center;
-  width: 90%;
+  width: 67.6%;
+  border: 0;
   background-color: rgb(233, 83, 113);
-  text-decoration: white;
+  color: white;
+  font-weight: bold;
+  font-size: 1.8em;
 }
 
 form button p {
-  color: white;
-  font-weight: 800;
-  font-size: 1.5em;
+  width: 100%;
 }
