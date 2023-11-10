@@ -18,7 +18,7 @@ body {
 }
 
 .container h1 {
-  font-size: 7vh;
+  font-size: 6em;
   margin-bottom: 0;
   width: 70%;
 }
@@ -271,4 +271,52 @@ footer h2 {
 
 
 /* responsive */
-@media (max-width: 1440px) {}
+@media (max-width: 834px) {
+  .container-timer h1 {
+    color: white;
+    padding-top: 10%;
+    font-size: 1.2em;
+  }
+
+  .container-timer a {
+    color: white;
+    font-size: 1em;
+    margin-bottom: 20%;
+  }
+
+  .container h1 {
+    font-size: 4em;
+    margin-bottom: 0;
+    width: 70%;
+  }
+
+  .key-h1 {
+    font-size: 2em;
+    margin-bottom: 0;
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+  }
+
+  form div {
+    width: calc(90% - 10px);
+    padding-bottom: 2%;
+  }
+
+  .roles div {
+    padding-left: 30px;
+    width: calc(100% - 10px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 20px;
+  }
+
+  .text {
+    display: flex;
+    margin-left: 6%;
+    flex-direction: column;
+  }
+}
