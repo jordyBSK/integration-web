@@ -96,7 +96,7 @@ h1 span {
 
 .time {
   text-align: center;
-  width: 12%;
+  width: 15%;
   background-color: white;
 }
 
@@ -124,7 +124,7 @@ h1 span {
 
 .key-roles .description {
   font-size: 1.7em;
-  width: 100%;
+  width: 90%;
   margin-top: 0;
 }
 
@@ -165,6 +165,7 @@ h1 span {
 .reasons .text p {
   color: black;
   margin-top: 10%;
+  width: 70%;
 }
 
 .reasons a {
@@ -246,16 +247,14 @@ form button {
 
 form button p {
   width: 100%;
-  padding-bottom: 20;
 }
 
 footer {
-  padding-top: 9%;
   background-image: url(/Frame12.svg);
   background-repeat: no-repeat;
   font-size: 1em;
   background-size: 100%;
-  margin-top: 2%;
+  margin-top: 5%;
   height: 180px;
 }
 
@@ -264,8 +263,12 @@ footer .text h2 {
   color: white;
 }
 
+footer h1 {
+  margin-top: 5%;
+}
+
 footer h2 {
-  font-weight: 400;
+  font-weight: 300;
   margin: 0;
 }
 
@@ -305,6 +308,16 @@ footer h2 {
     padding-bottom: 2%;
   }
 
+  input {
+    font-family: "Roboto", sans-serif;
+    width: 95%;
+    margin: 0 0 15px;
+    padding: 15px;
+    font-size: 14px;
+    border: 1px solid rgb(21, 21, 21);
+    border-radius: 5px;
+  }
+
   .roles div {
     padding-left: 30px;
     width: calc(100% - 10px);
@@ -319,4 +332,213 @@ footer h2 {
     margin-left: 6%;
     flex-direction: column;
   }
+
+  footer {
+    background-image: url(/Frame12.svg);
+    background-repeat: no-repeat;
+    font-size: 0.7em;
+    background-size: 100%;
+    margin-top: 5%;
+    height: 110px;
+  }
+
+  footer .text h1 {
+    margin-top: 5%;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+/* responsive 390 */
+
+@media (max-width: 390px) {
+
+  .title {
+
+    padding-left: 5%;
+    font-weight: bold;
+    font-size: 1em;
+  }
+
+  .description {
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    color: rgb(157, 157, 157);
+  }
+
+
+  .button1 {
+    width: 300px;
+    font-size: 0.5em;
+    margin-right: 0.5%;
+    background-color: #efefef;
+    border-radius: 25px;
+    padding: 20px;
+  }
+
+  .button2 {
+    width: 300px;
+    font-size: 0.5em;
+    margin-left: 0.5%;
+    background-color: #e95270;
+    border-radius: 25px;
+    padding: 20px;
+    color: white;
+  }
+
+
+  .time {
+    text-align: center;
+    width: 15%;
+    background-color: white;
+    height: 50px;
+  }
+
+  .time p {
+    color: rgb(233, 83, 113);
+    font-weight: 1000;
+    font-size: 1em;
+    padding: 0%;
+  }
+
+  .container-timer h1 {
+    color: white;
+    padding-top: 10%;
+    font-size: 0.7em;
+  }
+
+  .container-timer a {
+    color: white;
+    font-size: 0.7em;
+    margin-bottom: 20%;
+  }
+
+  .key-roles .description {
+    font-size: 1em;
+    width: 90%;
+    margin-top: 0;
+  }
+
+
+  .container h1 {
+
+    font-size: 2em;
+    margin-bottom: 0;
+    width: 90%;
+
+  }
+
+
+
+  .key-h1 {
+
+    font-size: 2em;
+    margin-bottom: 0;
+    text-align: center;
+
+  }
+
+
+
+  .text h1 {
+    margin-bottom: 0px;
+    font-size: 1em;
+  }
+
+  .text p {
+    color: rgb(159, 159, 159);
+    width: 90%;
+  }
+
+
+  .icon {
+    font-size: 2em;
+    margin-top: 5px;
+  }
+
+  .roles div {
+    padding-left: 30px;
+    width: calc(100%);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 20px;
+  }
+
+  .role-h1 {
+    font-size: 1em;
+  }
+
+  .roles p {
+    font-size: 1em;
+    color: rgb(159, 159, 159);
+  }
+
+  .reasons a {
+    font-size: 1em;
+    font-weight: 700;
+    color: rgb(233, 83, 113);
+    text-decoration: underline;
+    margin-bottom: 3%;
+  }
+
+
+  form {
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    gap: 5%;
+    justify-content: center;
+
+  }
+
+  input {
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    margin: 0 0 15px;
+    padding: 15px;
+    font-size: 14px;
+    border: 1px solid rgb(21, 21, 21);
+    border-radius: 5px;
+  }
+
+
+  form button {
+
+    display: flex;
+    justify-content: center;
+    width: 67.6%;
+    border: 0;
+    background-color: rgb(233, 83, 113);
+    color: white;
+    font-weight: bold;
+    font-size: 0.8em;
+
+  }
+
+  .talent-icon {
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  footer {
+    background-image: url(/Frame12.svg);
+    background-repeat: no-repeat;
+    font-size: 0.5em;
+    background-size: 100%;
+    margin-top: 5%;
+    height: 50px;
+  }
+
+
 }
